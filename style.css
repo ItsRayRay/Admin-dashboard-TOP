@@ -2,13 +2,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+body {
+    margin: 0;
+}
 
 
 .container {
     display: grid;
     grid-template-columns: repeat(10, 0.5fr);
-    grid-template-rows: repeat(10, 90px)
+    grid-template-rows: repeat(10, 90px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -23,7 +25,6 @@
         background-color: rgb(255, 255, 255);
     }
     .content { grid-area: 4 / 3 / 11 / 11; 
-        background-color: rgb(221, 215, 215);
     }
 
 
@@ -41,8 +42,9 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
-    box-shadow: 0 4px 2px -2px rgb(121, 16, 16);
     padding-bottom: 20px;
+    min-width: 82%;
+    background-color: rgb(223, 215, 215);
     
 
 }
@@ -55,6 +57,8 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
+    min-width: 82%;
+    background-color: rgb(223, 215, 215);
 }
 
 .menu__bar {
@@ -62,6 +66,11 @@
     flex-direction: column;
     align-items: center;
     justify-content:flex-start ;
+    position:fixed;
+    padding-right: 50px;
+    padding-left: 10px;
+    min-height: 100%;
+    min-width: 18%;
 }
 
 #search__bar__name {
@@ -72,7 +81,7 @@
 }
 
 input {
-    background-color: rgb(223, 215, 215);
+    background-color: rgb(255, 255, 255);
     padding-right: 350px;
     border: none;
     border-radius: 15px;
@@ -91,12 +100,12 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     margin-top: 30px;
 }
 
 #menu__links__first {
-    margin-bottom: 800px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -244,19 +253,14 @@ h1 {
         border-radius: 15px;
         box-shadow: 10px 10px 25px grey; }
     .div9 { grid-area: 2 / 4 / 6 / 5;
-        border: solid black;
         background-color: white;
         border-radius: 15px; 
         box-shadow: 10px 10px 25px grey; }
     .div10 { grid-area: 6 / 4 / 7 / 5; 
        }
     .div11 { grid-area: 7 / 4 / 11 / 5;
-        border: solid black;
         background-color: white;
         border-radius: 15px; 
         box-shadow: 10px 10px 25px grey; }
     
 
-.content {
-    box-shadow: 0px 5px 3px #888, 0px -5px 3px #888;
-}
