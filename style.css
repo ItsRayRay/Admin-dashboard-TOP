@@ -5,10 +5,10 @@
 
 
 
-.parent {
+.container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 0.5fr);
+    grid-template-rows: repeat(10, 90px)
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -42,6 +42,8 @@
     padding-left: 50px;
     padding-right: 50px;
     box-shadow: 0 4px 2px -2px rgb(121, 16, 16);
+    padding-bottom: 20px;
+    
 
 }
 
@@ -94,7 +96,7 @@ input {
 }
 
 #menu__links__first {
-    margin-bottom: 250px;
+    margin-bottom: 800px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -151,7 +153,7 @@ button {
 
 button:hover
 {
-    background-color: rgb(33, 87, 79);
+    background-color: rgb(14, 83, 110);
     color: white;
 }
 
@@ -192,4 +194,69 @@ h1 {
     color: white;
     font-size: 2em;
     padding-left: 10px;
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 5% repeat(2, 35%) 20% 5%;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    }
+
+
+    
+    .div1 { grid-area: 1 / 2 / 2 / 4;
+
+    margin-top: 20px;}
+    .div2 { grid-area: 1 / 4 / 2 / 5; 
+        margin-top: 20px;}
+    .div3 { grid-area: 2 / 2 / 5 / 3;
+        border-left: #fdc111 solid 7px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px grey; }
+    .div4 { grid-area: 2 / 3 / 5 / 4;
+        border-left: #fdc111 solid 7px;
+        background-color: white; 
+        border-radius: 15px;
+        box-shadow: 10px 10px 25px grey; }
+    .div5 { grid-area: 5 / 2 / 8 / 3;
+        border-left: #fdc111 solid 7px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 10px 10px 25px grey; }
+    .div6 { grid-area: 5 / 3 / 8 / 4;
+        border-left: #fdc111 solid 7px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 10px 10px 25px grey; }
+    .div7 { grid-area: 8 / 2 / 11 / 3; 
+        border-left: #fdc111 solid 7px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 10px 10px 25px grey; }
+    .div8 { grid-area: 8 / 3 / 11 / 4; 
+        border-left: #fdc111 solid 7px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 10px 10px 25px grey; }
+    .div9 { grid-area: 2 / 4 / 6 / 5;
+        border: solid black;
+        background-color: white;
+        border-radius: 15px; 
+        box-shadow: 10px 10px 25px grey; }
+    .div10 { grid-area: 6 / 4 / 7 / 5; 
+       }
+    .div11 { grid-area: 7 / 4 / 11 / 5;
+        border: solid black;
+        background-color: white;
+        border-radius: 15px; 
+        box-shadow: 10px 10px 25px grey; }
+    
+
+.content {
+    box-shadow: 0px 5px 3px #888, 0px -5px 3px #888;
 }
